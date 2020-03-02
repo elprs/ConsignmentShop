@@ -18,6 +18,7 @@ namespace ConsignmentShop
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
         BindingSource vendorsBinding = new BindingSource();
+        private decimal storeProfit = 0;
         public ConsignmentShop()
         {
             InitializeComponent();
@@ -34,8 +35,8 @@ namespace ConsignmentShop
 
             vendorsBinding.DataSource = store.Vendors;
             VendorListBox.DataSource = vendorsBinding;
-            VendorListBox.DisplayMember = "";
-            VendorListBox.ValueMember = "";
+            VendorListBox.DisplayMember = "Display";
+            VendorListBox.ValueMember = "Display";
         }
 
         public void SetUpData()
@@ -121,12 +122,17 @@ namespace ConsignmentShop
             {
                 item.IsSold = true;
                 item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
+                storeProfit += (1 - (decimal)item.Owner.Commission) * item.Price;
             }
 
             shoppingCartData.Clear();
             itemsBinding.DataSource = store.Items.Where(x => x.IsSold == false).ToList();
+
+            StoreProfitValue.Text = String.Format("${0}", storeProfit);
+
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
+            vendorsBinding.ResetBindings(false);
             
         }
     }
