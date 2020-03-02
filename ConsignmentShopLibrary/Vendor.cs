@@ -14,9 +14,6 @@ namespace ConsignmentShopLibrary
 
         public Vendor()
         {
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.Commission = Commission;
         }
     }
 }

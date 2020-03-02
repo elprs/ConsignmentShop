@@ -71,7 +71,7 @@
             // 
             this.addToCart.Location = new System.Drawing.Point(587, 330);
             this.addToCart.Name = "addToCart";
-            this.addToCart.Size = new System.Drawing.Size(236, 112);
+            this.addToCart.Size = new System.Drawing.Size(161, 112);
             this.addToCart.TabIndex = 3;
             this.addToCart.Text = "Add To Cart -->";
             this.addToCart.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@
             // 
             this.ShoppingCartListBoxLabel.AutoSize = true;
             this.ShoppingCartListBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShoppingCartListBoxLabel.Location = new System.Drawing.Point(841, 135);
+            this.ShoppingCartListBoxLabel.Location = new System.Drawing.Point(773, 135);
             this.ShoppingCartListBoxLabel.Name = "ShoppingCartListBoxLabel";
             this.ShoppingCartListBoxLabel.Size = new System.Drawing.Size(260, 40);
             this.ShoppingCartListBoxLabel.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             this.shoppingCartListBox.FormattingEnabled = true;
             this.shoppingCartListBox.ItemHeight = 40;
-            this.shoppingCartListBox.Location = new System.Drawing.Point(848, 212);
+            this.shoppingCartListBox.Location = new System.Drawing.Point(780, 212);
             this.shoppingCartListBox.Name = "shoppingCartListBox";
             this.shoppingCartListBox.Size = new System.Drawing.Size(497, 324);
             this.shoppingCartListBox.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             // MakePurchase
             // 
-            this.MakePurchase.Location = new System.Drawing.Point(1109, 578);
+            this.MakePurchase.Location = new System.Drawing.Point(780, 554);
             this.MakePurchase.Name = "MakePurchase";
             this.MakePurchase.Size = new System.Drawing.Size(236, 73);
             this.MakePurchase.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 791);
+            this.ClientSize = new System.Drawing.Size(1457, 722);
             this.Controls.Add(this.MakePurchase);
             this.Controls.Add(this.ShoppingCartListBoxLabel);
             this.Controls.Add(this.shoppingCartListBox);
